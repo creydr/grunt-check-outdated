@@ -1,0 +1,49 @@
+{
+  "name": "grunt-check-outdated",
+  "description": "Plugin to detect outdated npm packages",
+  "version": "0.1.0",
+  "homepage": "https://github.com/creydr/grunt-check-outdated",
+  "author": {
+    "name": "creydr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/creydr/grunt-check-outdated.git"
+  },
+  "bugs": {
+    "url": "https://github.com/creydr/grunt-check-outdated/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/creydr/grunt-check-outdated/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin",
+    "outdated",
+    "version",
+    "update",
+    "npm"
+  ],
+  "dependencies": {
+    "async": "^1.5.2",
+    "cli-table": "^0.3.1",
+    "david": "^7.0.1",
+    "extend": "^3.0.0",
+    "q": "^1.4.1"
+  }
+}
