@@ -16,16 +16,21 @@ module.exports = function(grunt) {
 				jshintrc : '.jshintrc'
 			}
 		},
+		nodeunit: {
+			tests: ['test/*_test.js']
+		},
 		outdated: {
-			checkDev: true
+			checkDev: true,
+			onlyStable: true
 		}
 	});
 
 	grunt.loadTasks('tasks');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
-	grunt.registerTask('test', []);
-	
+	grunt.registerTask('test', ['nodeunit']);
+
 	grunt.registerTask('check', ['outdated']);
 
 	grunt.registerTask('default', [ 'jshint', 'test' ]);

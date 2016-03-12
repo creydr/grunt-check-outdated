@@ -15,7 +15,6 @@ var async = require('async');
 
 module.exports = function(grunt) {
 	grunt.registerTask('outdated', 'Plugin to detect outdated npm packages', function() {
-        //console.log(grunt.config.get('outdated'));
 		var done = this.async();
         var manifest = require(process.cwd() + '/package.json');
 
@@ -89,50 +88,5 @@ module.exports = function(grunt) {
         ], function () {
             done();
         });
-/*
-
-		var execNpmOutdated = function() {
-			childProcess.exec('npm outdated --depth 0 --json', {}, function(err, stdout, stderr) {
-
-				if (err || stderr) {
-					done(new Error(err));
-				} else {
-					var outdatedDependencies = getOutdated(stdout);
-					formatOutdated(outdatedDependencies);
-	
-					//done();
-				}
-			});
-		};
-
-		var getOutdated = function(cmdResult) {
-			var result = JSON.parse(cmdResult);
-			var outdatedDependencies = {};
-
-			for ( var dependency in result) {
-				//if (result[dependency].current !== result[dependency].wanted) {
-					outdatedDependencies[dependency] = result[dependency];
-				//}
-			}
-
-			return outdatedDependencies;
-		};
-
-		var formatOutdated = function(deps) {
-			var table = new Table({
-				head : [ 'Dependency', 'current', 'stable', 'latest' ],
-				colWidths : [ 50, 10, 10, 10 ]
-			});
-			
-			for ( var dep in deps) {
-				table.push([ dep, deps[dep].current, deps[dep].wanted, deps[dep].latest ]);
-			}
-
-			grunt.log.write(table.toString());
-		};
-
-		execNpmOutdated();
-		
-		*/
 	});
 };

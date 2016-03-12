@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
     "grunt": "~0.4.5"
   },
   "peerDependencies": {
@@ -43,7 +44,6 @@
     "async": "^1.5.2",
     "cli-table": "^0.3.1",
     "david": "^7.0.1",
-    "extend": "^3.0.0",
-    "q": "^1.4.1"
+    "extend": "^3.0.0"
   }
 }
