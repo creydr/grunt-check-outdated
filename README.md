@@ -2,7 +2,7 @@
 
 [![NPM version](https://travis-ci.org/creydr/grunt-check-outdated.svg?branch=master)](https://travis-ci.org/creydr/grunt-check-outdated)
 
-> Plugin to detect outdated npm packages.
+> Grunt Plugin to detect and list outdated npm packages, used in the project.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`

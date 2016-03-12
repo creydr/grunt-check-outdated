@@ -1,6 +1,6 @@
 {
   "name": "grunt-check-outdated",
-  "description": "Plugin to detect outdated npm packages",
+  "description": "Grunt Plugin to detect and list outdated npm packages, used in the project.",
   "version": "0.1.0",
   "homepage": "https://github.com/creydr/grunt-check-outdated",
   "author": {
