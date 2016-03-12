@@ -6,6 +6,9 @@
   "author": {
     "name": "creydr"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/creydr/grunt-check-outdated.git"
